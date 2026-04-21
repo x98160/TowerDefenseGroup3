@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03cbc7b88d13fca4ea41d87d0f7f0ac0, type: 3}
+  m_Name: PainterPalette
+  m_EditorClassIdentifier: 
+  TerrainPrefabs:
+  - {fileID: 2490319939600859149, guid: c316a37da0cc36947b168403a525d715, type: 3}
+  - {fileID: 5026439931510693949, guid: 7d3835d0d615042498e59b809aa449c4, type: 3}
+  - {fileID: 3658122688476186918, guid: 4d9c060fe1db81447aa0bc1109b7cedd, type: 3}
+  minScale: 0.5
+  maxScale: 0.7

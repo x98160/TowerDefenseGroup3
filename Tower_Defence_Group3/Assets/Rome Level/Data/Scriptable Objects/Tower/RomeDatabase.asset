@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948fd4765eaebb74d824623ceacfa77a, type: 3}
+  m_Name: RomeDatabase
+  m_EditorClassIdentifier: 
+  objectsData:
+  - <Name>k__BackingField: Archer Tower
+    <ID>k__BackingField: 0
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 2696670510798056321, guid: a3fbbbbe2cb035545940ab3d318079bb, type: 3}
+    <Cost>k__BackingField: 50
+    <Damage>k__BackingField: 10
+    <Upgrade>k__BackingField: 100
+    Ability: 0
+    <UpgradePrefabs>k__BackingField:
+    - {fileID: 2696670510798056321, guid: 430a26f7257db5a46beb9ff3352da9e3, type: 3}
+    - {fileID: 2696670510798056321, guid: d9549bad391fa774189c117b91806c76, type: 3}
+  - <Name>k__BackingField: Slow Tower
+    <ID>k__BackingField: 1
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 2186387671609012472, guid: 661f921c312b88749aaf6acbed04e068, type: 3}
+    <Cost>k__BackingField: 60
+    <Damage>k__BackingField: 11
+    <Upgrade>k__BackingField: 120
+    Ability: 1
+    <UpgradePrefabs>k__BackingField:
+    - {fileID: 2186387671609012472, guid: 0f79e43ffc4e1984ebaa9733904b5812, type: 3}
+    - {fileID: 2186387671609012472, guid: 4d0f8a3bece99534ab34a03b1dae5c41, type: 3}
+  - <Name>k__BackingField: Cannon
+    <ID>k__BackingField: 2
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 1006850320800120259, guid: 268006270c290424c9c88bcb4c7a2b06, type: 3}
+    <Cost>k__BackingField: 60
+    <Damage>k__BackingField: 13
+    <Upgrade>k__BackingField: 100
+    Ability: 3
+    <UpgradePrefabs>k__BackingField:
+    - {fileID: 3380905992892161176, guid: dfb559dbae083804fa9a89c6f69e2754, type: 3}
+    - {fileID: 343633787657753695, guid: 8cf1f91eceb2c8e49a3841884af5f1f4, type: 3}
+  - <Name>k__BackingField: Balista
+    <ID>k__BackingField: 3
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 9014134371485917576, guid: 68933f5b72c88514ab935d34b64b7273, type: 3}
+    <Cost>k__BackingField: 80
+    <Damage>k__BackingField: 15
+    <Upgrade>k__BackingField: 120
+    Ability: 0
+    <UpgradePrefabs>k__BackingField:
+    - {fileID: 9213660029216005864, guid: 357058e955d921c4284de5c49eecf7bc, type: 3}
+    - {fileID: 2093120492656270337, guid: 3249357bfcb46784fa7952cd1f98374b, type: 3}
+  - <Name>k__BackingField: Japanese Tower
+    <ID>k__BackingField: 4
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 7421028239721089351, guid: 07ebb343fe74dae478e46ffd25cbef78, type: 3}
+    <Cost>k__BackingField: 80
+    <Damage>k__BackingField: 20
+    <Upgrade>k__BackingField: 180
+    Ability: 0
+    <UpgradePrefabs>k__BackingField:
+    - {fileID: 7421028239721089351, guid: 9fca8e07796868d4c8ff4f058b6876b4, type: 3}
+    - {fileID: 7421028239721089351, guid: 0a679761a9d4e124ea1a98ef6b5cff02, type: 3}
