@@ -56,6 +56,7 @@ public class AiPathfinding : MonoBehaviour
                 if (playerHealth != null)
                 {
                     playerHealth.TakeDamage(AIController.damage);
+                    Destroy(gameObject);
                 }
 
                 timer = 0f;
