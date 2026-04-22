@@ -38,27 +38,33 @@ MonoBehaviour:
   - <Name>k__BackingField: Turret 3
     <ID>k__BackingField: 2
     <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 0}
+    <Prefab>k__BackingField: {fileID: 5076999965322552693, guid: 05976a90685e44a4a849a367d206b1fd, type: 3}
     <Cost>k__BackingField: 1
     <Damage>k__BackingField: 1
     <Upgrade>k__BackingField: 1
     Ability: 0
-    <UpgradePrefabs>k__BackingField: []
+    <UpgradePrefabs>k__BackingField:
+    - {fileID: 6998148967359920748, guid: 3372d7bb90a0d15449d76c3cb2772f0e, type: 3}
+    - {fileID: 1410172954030199226, guid: 41e79646f166a6a42b2a05da71f2e159, type: 3}
   - <Name>k__BackingField: Turret 4
     <ID>k__BackingField: 3
     <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 0}
+    <Prefab>k__BackingField: {fileID: 208822650574813260, guid: 21b73d56abf6a7541a104e873ff30ec9, type: 3}
     <Cost>k__BackingField: 1
     <Damage>k__BackingField: 1
     <Upgrade>k__BackingField: 1
     Ability: 0
-    <UpgradePrefabs>k__BackingField: []
+    <UpgradePrefabs>k__BackingField:
+    - {fileID: 2356385418779778608, guid: f8d23dc6e9eb7e3479baf35aae9bb975, type: 3}
+    - {fileID: 9151614379978094572, guid: 811a36c4b113f694bbf9d365bd2a05ea, type: 3}
   - <Name>k__BackingField: Turret 5
     <ID>k__BackingField: 4
     <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 0}
+    <Prefab>k__BackingField: {fileID: 1795137047195874219, guid: dad72e8a94c524948ae8af0eb53d5ed9, type: 3}
     <Cost>k__BackingField: 1
     <Damage>k__BackingField: 1
     <Upgrade>k__BackingField: 1
     Ability: 0
-    <UpgradePrefabs>k__BackingField: []
+    <UpgradePrefabs>k__BackingField:
+    - {fileID: 8933305042444395513, guid: 7743081555ebe5b4cafa33da8565c932, type: 3}
+    - {fileID: 6597561757023641248, guid: 2223b63328df8ce40ba0ac99619f917a, type: 3}
