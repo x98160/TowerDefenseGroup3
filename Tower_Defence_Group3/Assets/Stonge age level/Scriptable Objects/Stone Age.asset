@@ -15,10 +15,11 @@ MonoBehaviour:
   objectsData:
   - <Name>k__BackingField: Dart
     <ID>k__BackingField: 0
-    <Size>k__BackingField: {x: 0, y: 0}
-    <Prefab>k__BackingField: {fileID: 1923522275323792616, guid: 8c86037311ef2704cb4067c5757c9101, type: 3}
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 3619832548725922811, guid: 10b11259563ee1345927c24d0b6ac2fe, type: 3}
     <Cost>k__BackingField: 50
     <Damage>k__BackingField: 10
     <Upgrade>k__BackingField: 100
     Ability: 0
-    <UpgradePrefabs>k__BackingField: []
+    <UpgradePrefabs>k__BackingField:
+    - {fileID: 3619832548725922811, guid: 88d360456de08d143aa2f7a3516c938f, type: 3}

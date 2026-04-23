@@ -1405,6 +1405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 145245130}
   - component: {fileID: 145245129}
+  - component: {fileID: 145245131}
   m_Layer: 6
   m_Name: Road_Corner (7)
   m_TagString: Untagged
@@ -1441,6 +1442,27 @@ Transform:
   - {fileID: 884340755}
   m_Father: {fileID: 159432560}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &145245131
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145245128}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &145631127
 GameObject:
   m_ObjectHideFlags: 0
@@ -1968,7 +1990,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 0.040175524, z: 1}
+  m_Size: {x: 1, y: 0.19, z: 1}
   m_Center: {x: -0.000000037252903, y: 0.020087842, z: -0.00000047683716}
 --- !u!1001 &200621814
 PrefabInstance:
@@ -3019,6 +3041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 288647193}
   - component: {fileID: 288647192}
+  - component: {fileID: 288647194}
   m_Layer: 6
   m_Name: Road_Corner (14)
   m_TagString: Untagged
@@ -3055,6 +3078,27 @@ Transform:
   - {fileID: 1999330014}
   m_Father: {fileID: 159432560}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!65 &288647194
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288647191}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &307489024
 GameObject:
   m_ObjectHideFlags: 0
@@ -5099,6 +5143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 576961410}
   - component: {fileID: 576961409}
+  - component: {fileID: 576961411}
   m_Layer: 6
   m_Name: Road_Corner (18)
   m_TagString: Untagged
@@ -5135,6 +5180,27 @@ Transform:
   - {fileID: 1289964351}
   m_Father: {fileID: 159432560}
   m_LocalEulerAnglesHint: {x: 0, y: -179.999, z: 0}
+--- !u!65 &576961411
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576961408}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &585580139
 GameObject:
   m_ObjectHideFlags: 0
@@ -6542,6 +6608,7 @@ GameObject:
   m_Component:
   - component: {fileID: 749131339}
   - component: {fileID: 749131338}
+  - component: {fileID: 749131340}
   m_Layer: 6
   m_Name: Road_Corner (20)
   m_TagString: Untagged
@@ -6578,6 +6645,27 @@ Transform:
   - {fileID: 12442217}
   m_Father: {fileID: 159432560}
   m_LocalEulerAnglesHint: {x: 0, y: -179.999, z: 0}
+--- !u!65 &749131340
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749131337}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!224 &752278530 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3911441650336517865, guid: 7b9a5795ecc969342996e971b981c078, type: 3}
@@ -6890,6 +6978,7 @@ GameObject:
   m_Component:
   - component: {fileID: 774019353}
   - component: {fileID: 774019352}
+  - component: {fileID: 774019354}
   m_Layer: 6
   m_Name: Road_Corner (15)
   m_TagString: Untagged
@@ -6926,6 +7015,27 @@ Transform:
   - {fileID: 1095376900}
   m_Father: {fileID: 159432560}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &774019354
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774019351}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &776647646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8836,6 +8946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 933033557}
   - component: {fileID: 933033556}
+  - component: {fileID: 933033558}
   m_Layer: 6
   m_Name: Road_Corner (16)
   m_TagString: Untagged
@@ -8872,6 +8983,27 @@ Transform:
   - {fileID: 1643176230}
   m_Father: {fileID: 159432560}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &933033558
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933033555}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &940144413
 GameObject:
   m_ObjectHideFlags: 0
@@ -13123,6 +13255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1281279280}
   - component: {fileID: 1281279279}
+  - component: {fileID: 1281279281}
   m_Layer: 6
   m_Name: Road_Corner (5)
   m_TagString: Untagged
@@ -13159,6 +13292,27 @@ Transform:
   - {fileID: 1471205856}
   m_Father: {fileID: 159432560}
   m_LocalEulerAnglesHint: {x: 0, y: 360, z: 0}
+--- !u!65 &1281279281
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281279278}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1289964350
 GameObject:
   m_ObjectHideFlags: 0
@@ -13327,6 +13481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1308331792}
   - component: {fileID: 1308331791}
+  - component: {fileID: 1308331793}
   m_Layer: 6
   m_Name: Road_Corner (13)
   m_TagString: Untagged
@@ -13363,6 +13518,27 @@ Transform:
   - {fileID: 1570890891}
   m_Father: {fileID: 159432560}
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!65 &1308331793
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308331790}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1327186475
 GameObject:
   m_ObjectHideFlags: 0
@@ -13940,6 +14116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1403354575}
   - component: {fileID: 1403354574}
+  - component: {fileID: 1403354576}
   m_Layer: 6
   m_Name: Road_Corner (11)
   m_TagString: Untagged
@@ -13976,6 +14153,27 @@ Transform:
   - {fileID: 32659080}
   m_Father: {fileID: 159432560}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1403354576
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403354573}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1408891494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14088,6 +14286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1411349973}
   - component: {fileID: 1411349972}
+  - component: {fileID: 1411349974}
   m_Layer: 6
   m_Name: Road_Corner (10)
   m_TagString: Untagged
@@ -14124,6 +14323,27 @@ Transform:
   - {fileID: 781796068}
   m_Father: {fileID: 159432560}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!65 &1411349974
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411349971}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1412667296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14445,6 +14665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1445599722}
   - component: {fileID: 1445599721}
+  - component: {fileID: 1445599723}
   m_Layer: 6
   m_Name: Road_Corner (9)
   m_TagString: Untagged
@@ -14481,6 +14702,27 @@ Transform:
   - {fileID: 1174350789}
   m_Father: {fileID: 159432560}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1445599723
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445599720}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1452083042
 GameObject:
   m_ObjectHideFlags: 0
@@ -14524,6 +14766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1464711832}
   - component: {fileID: 1464711831}
+  - component: {fileID: 1464711833}
   m_Layer: 6
   m_Name: Road_Corner (6)
   m_TagString: Untagged
@@ -14560,6 +14803,27 @@ Transform:
   - {fileID: 102916130}
   m_Father: {fileID: 159432560}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!65 &1464711833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464711830}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1471205855
 GameObject:
   m_ObjectHideFlags: 0
@@ -14864,6 +15128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1502790119}
   - component: {fileID: 1502790118}
+  - component: {fileID: 1502790120}
   m_Layer: 6
   m_Name: Road_Corner (17)
   m_TagString: Untagged
@@ -14900,6 +15165,27 @@ Transform:
   - {fileID: 136110956}
   m_Father: {fileID: 159432560}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!65 &1502790120
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502790117}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1505749552
 GameObject:
   m_ObjectHideFlags: 0
@@ -15766,6 +16052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1591310258}
   - component: {fileID: 1591310257}
+  - component: {fileID: 1591310259}
   m_Layer: 6
   m_Name: Road_Corner (19)
   m_TagString: Untagged
@@ -15802,6 +16089,27 @@ Transform:
   - {fileID: 946681435}
   m_Father: {fileID: 159432560}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1591310259
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591310256}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1633371062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17474,6 +17782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1788950351}
   - component: {fileID: 1788950350}
+  - component: {fileID: 1788950352}
   m_Layer: 6
   m_Name: Road_Corner (8)
   m_TagString: Untagged
@@ -17510,6 +17819,27 @@ Transform:
   - {fileID: 248250017}
   m_Father: {fileID: 159432560}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!65 &1788950352
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788950349}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1792550232
 GameObject:
   m_ObjectHideFlags: 0
@@ -18250,6 +18580,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1838373047}
   - component: {fileID: 1838373046}
+  - component: {fileID: 1838373048}
   m_Layer: 6
   m_Name: Road_Corner (4)
   m_TagString: Untagged
@@ -18286,6 +18617,27 @@ Transform:
   - {fileID: 2015698511}
   m_Father: {fileID: 159432560}
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!65 &1838373048
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838373045}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1841307367
 GameObject:
   m_ObjectHideFlags: 0
@@ -18570,6 +18922,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1869044731}
   - component: {fileID: 1869044730}
+  - component: {fileID: 1869044732}
   m_Layer: 6
   m_Name: Road_Corner (12)
   m_TagString: Untagged
@@ -18606,6 +18959,27 @@ Transform:
   - {fileID: 1110907259}
   m_Father: {fileID: 159432560}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &1869044732
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869044729}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1870013219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25774,6 +26148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1823090623593748988}
   - component: {fileID: 1823090623593748989}
+  - component: {fileID: 1823090623593748990}
   m_Layer: 6
   m_Name: Road_Corner (3)
   m_TagString: Untagged
@@ -25850,6 +26225,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   order: 3
+--- !u!65 &1823090623593748990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766343868148714793}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1892675327719965543
 MeshRenderer:
   m_ObjectHideFlags: 0
