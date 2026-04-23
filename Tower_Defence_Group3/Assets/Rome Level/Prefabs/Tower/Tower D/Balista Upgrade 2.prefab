@@ -514,12 +514,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7955c9f1b49099439612327806ee283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 8
+  maxDistance: 6
   player: {fileID: 678620332866185884}
   projectile: {fileID: 1701766291348420743, guid: 995b01fb09d69c2468e586ea75c37461, type: 3}
   shootPoint: {fileID: 8983945430621851017}
   projectileSpeed: 50
-  fireRate: 2
+  fireRate: 2.2
   secsToDestroy: 0.5
   damage: 10
   damageIncrease: 5
@@ -1037,12 +1037,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7955c9f1b49099439612327806ee283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 8
+  maxDistance: 6
   player: {fileID: 7154322561714800089}
   projectile: {fileID: 1701766291348420743, guid: 995b01fb09d69c2468e586ea75c37461, type: 3}
   shootPoint: {fileID: 8983945430621851017}
   projectileSpeed: 50
-  fireRate: 2
+  fireRate: 2.2
   secsToDestroy: 0.5
   damage: 10
   damageIncrease: 5
@@ -1467,12 +1467,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7955c9f1b49099439612327806ee283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 8
+  maxDistance: 6
   player: {fileID: 8759462685351149318}
   projectile: {fileID: 1701766291348420743, guid: 995b01fb09d69c2468e586ea75c37461, type: 3}
   shootPoint: {fileID: 8983945430621851017}
   projectileSpeed: 50
-  fireRate: 2
+  fireRate: 2.2
   secsToDestroy: 0.5
   damage: 10
   damageIncrease: 5
