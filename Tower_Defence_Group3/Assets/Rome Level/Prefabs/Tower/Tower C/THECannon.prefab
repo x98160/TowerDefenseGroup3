@@ -256,7 +256,7 @@ MonoBehaviour:
   projectile: {fileID: 6047399693969199944, guid: 30e6242f2908c8e4c9aec83e6946baf9, type: 3}
   shootPoint: {fileID: 7935512797692950287}
   projectileSpeed: 50
-  fireRate: 0.3
+  fireRate: 0.4
   secsToDestroy: 0.5
   damage: 10
   damageIncrease: 5
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5394336768520702293}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7955c9f1b49099439612327806ee283, type: 3}
   m_Name: 
@@ -310,7 +310,7 @@ MonoBehaviour:
   projectile: {fileID: 6047399693969199944, guid: 30e6242f2908c8e4c9aec83e6946baf9, type: 3}
   shootPoint: {fileID: 7935512797692950287}
   projectileSpeed: 50
-  fireRate: 0.3
+  fireRate: 0.4
   secsToDestroy: 0.5
   damage: 10
   damageIncrease: 5

@@ -40,7 +40,7 @@ MonoBehaviour:
     <Size>k__BackingField: {x: 1, y: 1}
     <Prefab>k__BackingField: {fileID: 1006850320800120259, guid: 268006270c290424c9c88bcb4c7a2b06, type: 3}
     <Cost>k__BackingField: 60
-    <Damage>k__BackingField: 13
+    <Damage>k__BackingField: 15
     <Upgrade>k__BackingField: 100
     Ability: 3
     <UpgradePrefabs>k__BackingField:
