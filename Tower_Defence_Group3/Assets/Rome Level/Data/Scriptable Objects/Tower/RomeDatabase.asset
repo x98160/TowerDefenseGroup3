@@ -64,7 +64,7 @@ MonoBehaviour:
     <Cost>k__BackingField: 80
     <Damage>k__BackingField: 20
     <Upgrade>k__BackingField: 180
-    Ability: 0
+    Ability: 2
     <UpgradePrefabs>k__BackingField:
     - {fileID: 7421028239721089351, guid: 9fca8e07796868d4c8ff4f058b6876b4, type: 3}
     - {fileID: 7421028239721089351, guid: 0a679761a9d4e124ea1a98ef6b5cff02, type: 3}

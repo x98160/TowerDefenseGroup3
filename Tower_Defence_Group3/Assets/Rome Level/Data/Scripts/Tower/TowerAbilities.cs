@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class TowerAbilities : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class TowerAbilities : MonoBehaviour
 
     [SerializeField] private float poisonDamage = 3f;
     [SerializeField] private float poisonRadius = 10f;
+    [SerializeField] private float poisonTickRate = 1f; // NEW: delay between poison ticks
     [SerializeField] private float slowmovementSpeed = 0.7f;
     [SerializeField] private float slowmovementRadius = 10f;
     [SerializeField] private float splashDamage = 15f;
@@ -21,7 +23,6 @@ public class TowerAbilities : MonoBehaviour
 
     void Start()
     {
-        // Auto-create the manager if it doesn't exist yet
         if (_manager == null)
         {
             GameObject managerObj = new GameObject("TowerAbilitiesManager");
@@ -39,7 +40,7 @@ public class TowerAbilities : MonoBehaviour
     void Update()
     {
         if (slowmovementAbility) SlowMovement();
-        if (poisonAbility) PoisonAbility();
+        // Poison is now handled by coroutine, removed from Update
     }
 
     public void ApplyAbility(Abilities ability)
@@ -59,6 +60,7 @@ public class TowerAbilities : MonoBehaviour
             case Abilities.poisonAbility:
                 if (poisonAbility) return;
                 poisonAbility = true;
+                StartCoroutine(PoisonCoroutine()); // NEW: start the coroutine
                 break;
 
             case Abilities.splashdamageAbility:
@@ -88,6 +90,15 @@ public class TowerAbilities : MonoBehaviour
     #endregion
 
     #region Poison Ability
+    private IEnumerator PoisonCoroutine()
+    {
+        while (poisonAbility)
+        {
+            PoisonAbility();
+            yield return new WaitForSeconds(poisonTickRate);
+        }
+    }
+
     public void PoisonAbility()
     {
         Collider[] enemies = Physics.OverlapSphere(transform.position, poisonRadius, LayerMask.GetMask("AI"));
@@ -96,7 +107,7 @@ public class TowerAbilities : MonoBehaviour
         {
             AIController aiController = col.GetComponent<AIController>();
             if (aiController == null) continue;
-            aiController.TakeDamage(poisonDamage * Time.deltaTime);
+            aiController.TakeDamage(poisonDamage); // No longer multiplied by Time.deltaTime
         }
     }
     #endregion
@@ -134,12 +145,10 @@ public class TowerAbilities : MonoBehaviour
     }
     #endregion
 
-    // Nested manager class
     private class TowerAbilitiesManager : MonoBehaviour
     {
         void LateUpdate()
         {
-            // Reset all enemy speeds every frame before towers re-apply their slow
             GameObject[] allEnemies = GameObject.FindGameObjectsWithTag("AI");
             foreach (GameObject ai in allEnemies)
             {
