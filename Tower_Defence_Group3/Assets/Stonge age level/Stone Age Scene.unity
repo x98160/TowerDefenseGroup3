@@ -5444,7 +5444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55a4c66129cf5ab45b002fb7420b07bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerData: {fileID: 11400000, guid: b22eb584d7edcb144b000f0df6dd8cac, type: 2}
+  towerData: {fileID: 11400000, guid: 3c373f6dc24eea94a954a024b349f701, type: 2}
   dataIndex: 0
 --- !u!114 &588916390
 MonoBehaviour:
@@ -9345,11 +9345,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poisonDamage: 3
+  poisonRadius: 10
+  poisonTickRate: 1
   slowmovementSpeed: 0.7
+  slowmovementRadius: 10
   splashDamage: 15
   splashDamageRadius: 5
   explosionEffectPrefab: {fileID: 0}
   towerData: {fileID: 11400000, guid: b22eb584d7edcb144b000f0df6dd8cac, type: 2}
+  towerID: -1
 --- !u!114 &965415697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13470,7 +13474,7 @@ MonoBehaviour:
   cellIndicator: {fileID: 1849162645}
   inputManager: {fileID: 850345563}
   grid: {fileID: 606636940}
-  database: {fileID: 11400000, guid: b22eb584d7edcb144b000f0df6dd8cac, type: 2}
+  database: {fileID: 11400000, guid: 3c373f6dc24eea94a954a024b349f701, type: 2}
   gridVisual: {fileID: 77916427}
   blockingLayers:
     serializedVersion: 2
@@ -25790,11 +25794,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poisonDamage: 3
+  poisonRadius: 10
+  poisonTickRate: 1
   slowmovementSpeed: 0.7
+  slowmovementRadius: 10
   splashDamage: 15
   splashDamageRadius: 5
   explosionEffectPrefab: {fileID: 499873257356596338, guid: 7745a3c8550ad714885a853de7b6fa9e, type: 3}
   towerData: {fileID: 11400000, guid: b22eb584d7edcb144b000f0df6dd8cac, type: 2}
+  towerID: -1
 --- !u!1 &1792303491558959077
 GameObject:
   m_ObjectHideFlags: 0

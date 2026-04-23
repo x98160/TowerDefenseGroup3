@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerTrack : MonoBehaviour
 {
@@ -7,7 +8,6 @@ public class PlayerTrack : MonoBehaviour
     float distance;
     public float maxDistance;
     public Transform player;
-
     [Header("Shooting")]
     public GameObject projectile;
     public Transform shootPoint;
@@ -15,50 +15,43 @@ public class PlayerTrack : MonoBehaviour
     public float fireRate = 1f;
     private float nextFire;
     public float secsToDestroy = 5f;
-
     public int damage = 10;
     public int damageIncrease = 5;
-
     public bool isCannon = false;
-
     private TowerAbilities towerAbilities;
 
     void Start()
     {
         towerAbilities = GetComponentInParent<TowerAbilities>();
     }
+
     void Update()
     {
-        // Find an enemy if we don't have one
         if (enemy == null)
         {
-            GameObject[] enemies = GameObject.FindGameObjectsWithTag("AI"); // Creates an array of all the enemies in the scene
-
-            float closestDistance = Mathf.Infinity; 
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("AI");
+            float closestDistance = Mathf.Infinity;
             Transform closestEnemy = null;
 
-            foreach (GameObject ai in enemies) // Loop through each enemy to find the closest one
+            foreach (GameObject ai in enemies)
             {
-                float distance = Vector3.Distance(transform.position, ai.transform.position); // Calculate the distance from the tower to the enemy
-
-                if (distance < closestDistance && distance <= maxDistance) // If this enemy is closer than the closest one we've found so far and within range
+                float distance = Vector3.Distance(transform.position, ai.transform.position);
+                if (distance < closestDistance && distance <= maxDistance)
                 {
                     closestDistance = distance;
                     closestEnemy = ai.transform;
                 }
             }
-
             enemy = closestEnemy;
         }
 
-        if (enemy == null)
-            return;
+        if (enemy == null) return;
 
         distance = Vector3.Distance(transform.position, enemy.position);
 
         if (distance < maxDistance)
         {
-            if (isCannon == true)
+            if (isCannon)
             {
                 transform.LookAt(enemy);
                 transform.Rotate(0f, 90f, 0f);
@@ -70,8 +63,8 @@ public class PlayerTrack : MonoBehaviour
 
             if (Time.time >= nextFire)
             {
-                nextFire = Time.time + 1f / fireRate;
-                Shoot();
+                nextFire = Time.time + Mathf.Max(1f / fireRate, Time.deltaTime);
+                StartCoroutine(ShootNextFrame());
             }
         }
         else
@@ -80,14 +73,16 @@ public class PlayerTrack : MonoBehaviour
         }
     }
 
-    //Shooting method to instantiate the projectile and set its properties
-    #region
+    IEnumerator ShootNextFrame()
+    {
+        yield return null; // Wait one frame for transform to update
+        Shoot();
+    }
+
     void Shoot()
     {
         GameObject bullet = Instantiate(projectile, shootPoint.position, shootPoint.rotation);
-
         BulletDamage bulletScript = bullet.GetComponent<BulletDamage>();
-
         if (bulletScript != null)
         {
             bulletScript.target = enemy;
@@ -97,14 +92,10 @@ public class PlayerTrack : MonoBehaviour
         }
         Destroy(bullet, secsToDestroy);
     }
-    #endregion
 
-    //deugging
-    #region
     void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, maxDistance);
     }
-    #endregion
 }

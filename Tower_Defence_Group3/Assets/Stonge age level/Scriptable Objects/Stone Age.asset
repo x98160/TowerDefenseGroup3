@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948fd4765eaebb74d824623ceacfa77a, type: 3}
+  m_Name: Stone Age
+  m_EditorClassIdentifier: 
+  objectsData:
+  - <Name>k__BackingField: Dart
+    <ID>k__BackingField: 0
+    <Size>k__BackingField: {x: 0, y: 0}
+    <Prefab>k__BackingField: {fileID: 1923522275323792616, guid: 8c86037311ef2704cb4067c5757c9101, type: 3}
+    <Cost>k__BackingField: 50
+    <Damage>k__BackingField: 10
+    <Upgrade>k__BackingField: 100
+    Ability: 0
+    <UpgradePrefabs>k__BackingField: []

@@ -1414,7 +1414,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8933528579140173527}
   - component: {fileID: 8037187059195703071}
-  - component: {fileID: 129825854279592069}
   - component: {fileID: 1715744902268672020}
   m_Layer: 6
   m_Name: Japan_tower
@@ -1456,21 +1455,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerData: {fileID: 11400000, guid: b22eb584d7edcb144b000f0df6dd8cac, type: 2}
   objectIndex: 4
---- !u!114 &129825854279592069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5377688583769581220}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be289bf20ef959a4699acce835eb0bc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buildTime: 5
-  buildEffectPrefab: {fileID: 499873257356596338, guid: fd74f3d616af2d948a70d47a1e384003, type: 3}
-  Range: {fileID: 7504208102287457334}
 --- !u!114 &1715744902268672020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1483,12 +1467,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df7a9ad89ef76241af400677ba333fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poisonDamage: 3
+  poisonDamage: 5
+  poisonRadius: 10
+  poisonTickRate: 2
   slowmovementSpeed: 0.7
+  slowmovementRadius: 10
   splashDamage: 15
   splashDamageRadius: 5
   explosionEffectPrefab: {fileID: 6047399693969199944, guid: 30e6242f2908c8e4c9aec83e6946baf9, type: 3}
   towerData: {fileID: 11400000, guid: b22eb584d7edcb144b000f0df6dd8cac, type: 2}
+  towerID: 4
 --- !u!1 &7298763382204979915
 GameObject:
   m_ObjectHideFlags: 0

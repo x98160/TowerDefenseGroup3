@@ -1,43 +1,54 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class TowerAbilities : MonoBehaviour
 {
-
     private bool multishotAbility = false;
     private bool slowmovementAbility = false;
     private bool poisonAbility = false;
     private bool splashdamageAbility = false;
-    [SerializeField] private float poisonDamage = 3f; // damage per second for the poison ability, can be adjusted in the inspector
+
+    [SerializeField] private float poisonDamage = 3f;
+    [SerializeField] private float poisonRadius = 10f;
+    [SerializeField] private float poisonTickRate = 1f;
     [SerializeField] private float slowmovementSpeed = 0.7f;
+    [SerializeField] private float slowmovementRadius = 10f;
     [SerializeField] private float splashDamage = 15f;
     [SerializeField] private float splashDamageRadius = 5f;
     [SerializeField] private GameObject explosionEffectPrefab;
-
     [SerializeField] public TowerData towerData;
+    [SerializeField] private int towerID = -1;
 
-    private Abilities ability;
+    // Track enemies THIS tower is currently slowing
+    private HashSet<AiPathfinding> slowedEnemies = new HashSet<AiPathfinding>();
 
-    public void Start()
+    void Start()
     {
-        if(towerData != null && towerData.objectsData.Count > 0)
+        if (towerData != null && towerID >= 0)
         {
-            ApplyAbility(towerData.objectsData[0].Ability);
+            ObjectData myData = towerData.objectsData.Find(obj => obj.ID == towerID);
+            if (myData != null)
+                ApplyAbility(myData.Ability);
+            else
+                Debug.LogWarning($"[TowerAbilities] No ObjectData with ID {towerID} found.");
         }
-
     }
 
-    public void Update()
+    void Update()
     {
-        if (slowmovementAbility)
-        {
-            SlowMovement();
-        }
+        if (slowmovementAbility) SlowMovement();
+    }
 
-        if (poisonAbility)
+    void OnDestroy()
+    {
+        // Restore all slowed enemies when tower is removed
+        foreach (AiPathfinding ai in slowedEnemies)
         {
-            PoisonAbility();
+            if (ai != null)
+                ai.speed = ai.originalSpeed;
         }
-
+        slowedEnemies.Clear();
     }
 
     public void ApplyAbility(Abilities ability)
@@ -46,121 +57,99 @@ public class TowerAbilities : MonoBehaviour
         {
             case Abilities.multishotAbility:
                 if (multishotAbility) return;
-                MultiShotAbility();
+                multishotAbility = true;
                 break;
-
 
             case Abilities.slowmovementAbility:
                 if (slowmovementAbility) return;
                 slowmovementAbility = true;
-
                 break;
-
 
             case Abilities.poisonAbility:
                 if (poisonAbility) return;
                 poisonAbility = true;
-
+                StartCoroutine(PoisonCoroutine());
                 break;
-
 
             case Abilities.splashdamageAbility:
                 if (splashdamageAbility) return;
                 splashdamageAbility = true;
-
                 break;
-
-
         }
     }
 
-    public void MultiShotAbility()
-    {
-        Debug.Log("testing Multishot");
-        multishotAbility = true;
-    }
-
-    // Slow movement ability will slow down the movement speed of all enemies within a certain radius of the tower. The radius and slow down percentage can be adjusted in the inspector of the player track script.
-    #region Slow movement ability
+    #region Slow Movement Ability
     public void SlowMovement()
     {
-        PlayerTrack playerTrack = FindAnyObjectByType<PlayerTrack>();
-        float maxDistance = playerTrack.maxDistance;
-        Debug.Log("testing slowmovement");
+        HashSet<AiPathfinding> inRangeNow = new HashSet<AiPathfinding>();
 
-
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("AI");
-
-        foreach (GameObject ai in enemies)
+        // Find all enemies currently in range
+        Collider[] hits = Physics.OverlapSphere(transform.position, slowmovementRadius, LayerMask.GetMask("AI"));
+        foreach (Collider col in hits)
         {
-            AiPathfinding aiPathFinding = ai.GetComponent<AiPathfinding>();
-            if (aiPathFinding == null) continue;
+            AiPathfinding ai = col.GetComponent<AiPathfinding>();
+            if (ai == null) continue;
 
-            float distance = Vector3.Distance(transform.position, ai.transform.position);
+            inRangeNow.Add(ai);
 
-            if (distance <= maxDistance)
+            // Apply slow if not already slowed by this tower
+            if (!slowedEnemies.Contains(ai))
             {
-                aiPathFinding.speed = aiPathFinding.originalSpeed * slowmovementSpeed;
-            }
-            else
-            {
-                aiPathFinding.speed = aiPathFinding.originalSpeed;
+                slowedEnemies.Add(ai);
+                ai.speed = ai.originalSpeed * slowmovementSpeed;
             }
         }
-        slowmovementAbility = true;
 
+        // Find enemies that left this tower's range and restore their speed
+        List<AiPathfinding> leftRange = new List<AiPathfinding>();
+        foreach (AiPathfinding ai in slowedEnemies)
+        {
+            if (!inRangeNow.Contains(ai))
+                leftRange.Add(ai);
+        }
+
+        foreach (AiPathfinding ai in leftRange)
+        {
+            slowedEnemies.Remove(ai);
+            if (ai != null)
+                ai.speed = ai.originalSpeed;
+        }
     }
     #endregion
 
-    // Poison ability will apply damage over time to all enemies within a certain radius of the tower. The damage per second can be adjusted in the inspector of this script.
-    #region Posion ability
+    #region Poison Ability
+    private IEnumerator PoisonCoroutine()
+    {
+        while (poisonAbility)
+        {
+            PoisonAbility();
+            yield return new WaitForSeconds(poisonTickRate);
+        }
+    }
+
     public void PoisonAbility()
     {
-        PlayerTrack playerTrack = FindAnyObjectByType<PlayerTrack>();
-        float maxDistance = playerTrack.maxDistance;
-
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("AI");
-
-        foreach (GameObject ai in enemies)
+        Collider[] enemies = Physics.OverlapSphere(transform.position, poisonRadius, LayerMask.GetMask("AI"));
+        foreach (Collider col in enemies)
         {
-
-            float distance = Vector3.Distance(transform.position, ai.transform.position);
-
-            if(distance< maxDistance)
-            {
-                AIController aiController = ai.GetComponent<AIController>();
-                aiController.TakeDamage(poisonDamage * Time.deltaTime);
-            }
-            Debug.Log("testing poison");
-            poisonAbility = true;
+            AIController aiController = col.GetComponent<AIController>();
+            if (aiController == null) continue;
+            aiController.TakeDamage(poisonDamage);
         }
     }
-
     #endregion
 
-    #region Splash Damage ability
+    #region Splash Damage Ability
     public void SplashDamageAbility(Vector3 hitPosition)
     {
-        // Spawn explosion effect at hit position
         if (explosionEffectPrefab != null)
         {
-
-            GameObject explosion =Instantiate(explosionEffectPrefab, hitPosition, Quaternion.identity);
+            GameObject explosion = Instantiate(explosionEffectPrefab, hitPosition, Quaternion.identity);
             ParticleSystem ps = explosion.GetComponent<ParticleSystem>();
-            if (ps != null)
-            {
-                Destroy(explosion, ps.main.duration + ps.main.startLifetime.constantMax);
-            }
-            else
-            {
-                Destroy(explosion, 2f);
-            }
-
+            Destroy(explosion, ps != null ? ps.main.duration + ps.main.startLifetime.constantMax : 2f);
         }
 
-        // Damage all enemies in radius
         Collider[] enemies = Physics.OverlapSphere(hitPosition, splashDamageRadius, LayerMask.GetMask("AI"));
-
         foreach (Collider col in enemies)
         {
             AIController aiController = col.GetComponent<AIController>();
@@ -168,12 +157,17 @@ public class TowerAbilities : MonoBehaviour
             aiController.TakeDamage(splashDamage);
         }
     }
+    #endregion
 
-    // Visualise splash radius in editor
+    #region Gizmos
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, splashDamageRadius);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, slowmovementRadius);
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, poisonRadius);
     }
     #endregion
 }
