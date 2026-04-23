@@ -303,11 +303,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poisonDamage: 3
+  poisonRadius: 10
+  poisonTickRate: 1
   slowmovementSpeed: 0.7
+  slowmovementRadius: 10
   splashDamage: 15
   splashDamageRadius: 5
   explosionEffectPrefab: {fileID: 5100459443323027030, guid: af44dbad11973b249a01df0dc9fe49fe, type: 3}
   towerData: {fileID: 11400000, guid: b22eb584d7edcb144b000f0df6dd8cac, type: 2}
+  towerID: 2
 --- !u!114 &4427964191172870150
 MonoBehaviour:
   m_ObjectHideFlags: 0

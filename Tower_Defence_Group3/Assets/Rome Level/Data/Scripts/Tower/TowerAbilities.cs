@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class TowerAbilities : MonoBehaviour
 {
@@ -10,37 +11,44 @@ public class TowerAbilities : MonoBehaviour
 
     [SerializeField] private float poisonDamage = 3f;
     [SerializeField] private float poisonRadius = 10f;
-    [SerializeField] private float poisonTickRate = 1f; // NEW: delay between poison ticks
+    [SerializeField] private float poisonTickRate = 1f;
     [SerializeField] private float slowmovementSpeed = 0.7f;
     [SerializeField] private float slowmovementRadius = 10f;
     [SerializeField] private float splashDamage = 15f;
     [SerializeField] private float splashDamageRadius = 5f;
     [SerializeField] private GameObject explosionEffectPrefab;
     [SerializeField] public TowerData towerData;
+    [SerializeField] private int towerID = -1;
 
-    private Abilities ability;
-    private static TowerAbilitiesManager _manager;
+    // Track enemies THIS tower is currently slowing
+    private HashSet<AiPathfinding> slowedEnemies = new HashSet<AiPathfinding>();
 
     void Start()
     {
-        if (_manager == null)
+        if (towerData != null && towerID >= 0)
         {
-            GameObject managerObj = new GameObject("TowerAbilitiesManager");
-            _manager = managerObj.AddComponent<TowerAbilitiesManager>();
-            DontDestroyOnLoad(managerObj);
-        }
-
-        if (towerData != null && towerData.objectsData.Count > 0)
-        {
-            foreach (var obj in towerData.objectsData)
-                ApplyAbility(obj.Ability);
+            ObjectData myData = towerData.objectsData.Find(obj => obj.ID == towerID);
+            if (myData != null)
+                ApplyAbility(myData.Ability);
+            else
+                Debug.LogWarning($"[TowerAbilities] No ObjectData with ID {towerID} found.");
         }
     }
 
     void Update()
     {
         if (slowmovementAbility) SlowMovement();
-        // Poison is now handled by coroutine, removed from Update
+    }
+
+    void OnDestroy()
+    {
+        // Restore all slowed enemies when tower is removed
+        foreach (AiPathfinding ai in slowedEnemies)
+        {
+            if (ai != null)
+                ai.speed = ai.originalSpeed;
+        }
+        slowedEnemies.Clear();
     }
 
     public void ApplyAbility(Abilities ability)
@@ -49,7 +57,7 @@ public class TowerAbilities : MonoBehaviour
         {
             case Abilities.multishotAbility:
                 if (multishotAbility) return;
-                MultiShotAbility();
+                multishotAbility = true;
                 break;
 
             case Abilities.slowmovementAbility:
@@ -60,7 +68,7 @@ public class TowerAbilities : MonoBehaviour
             case Abilities.poisonAbility:
                 if (poisonAbility) return;
                 poisonAbility = true;
-                StartCoroutine(PoisonCoroutine()); // NEW: start the coroutine
+                StartCoroutine(PoisonCoroutine());
                 break;
 
             case Abilities.splashdamageAbility:
@@ -70,21 +78,41 @@ public class TowerAbilities : MonoBehaviour
         }
     }
 
-    public void MultiShotAbility()
-    {
-        multishotAbility = true;
-    }
-
     #region Slow Movement Ability
     public void SlowMovement()
     {
-        Collider[] enemies = Physics.OverlapSphere(transform.position, slowmovementRadius, LayerMask.GetMask("AI"));
+        HashSet<AiPathfinding> inRangeNow = new HashSet<AiPathfinding>();
 
-        foreach (Collider col in enemies)
+        // Find all enemies currently in range
+        Collider[] hits = Physics.OverlapSphere(transform.position, slowmovementRadius, LayerMask.GetMask("AI"));
+        foreach (Collider col in hits)
         {
-            AiPathfinding aiPathfinding = col.GetComponent<AiPathfinding>();
-            if (aiPathfinding == null) continue;
-            aiPathfinding.speed = aiPathfinding.originalSpeed * slowmovementSpeed;
+            AiPathfinding ai = col.GetComponent<AiPathfinding>();
+            if (ai == null) continue;
+
+            inRangeNow.Add(ai);
+
+            // Apply slow if not already slowed by this tower
+            if (!slowedEnemies.Contains(ai))
+            {
+                slowedEnemies.Add(ai);
+                ai.speed = ai.originalSpeed * slowmovementSpeed;
+            }
+        }
+
+        // Find enemies that left this tower's range and restore their speed
+        List<AiPathfinding> leftRange = new List<AiPathfinding>();
+        foreach (AiPathfinding ai in slowedEnemies)
+        {
+            if (!inRangeNow.Contains(ai))
+                leftRange.Add(ai);
+        }
+
+        foreach (AiPathfinding ai in leftRange)
+        {
+            slowedEnemies.Remove(ai);
+            if (ai != null)
+                ai.speed = ai.originalSpeed;
         }
     }
     #endregion
@@ -102,12 +130,11 @@ public class TowerAbilities : MonoBehaviour
     public void PoisonAbility()
     {
         Collider[] enemies = Physics.OverlapSphere(transform.position, poisonRadius, LayerMask.GetMask("AI"));
-
         foreach (Collider col in enemies)
         {
             AIController aiController = col.GetComponent<AIController>();
             if (aiController == null) continue;
-            aiController.TakeDamage(poisonDamage); // No longer multiplied by Time.deltaTime
+            aiController.TakeDamage(poisonDamage);
         }
     }
     #endregion
@@ -123,7 +150,6 @@ public class TowerAbilities : MonoBehaviour
         }
 
         Collider[] enemies = Physics.OverlapSphere(hitPosition, splashDamageRadius, LayerMask.GetMask("AI"));
-
         foreach (Collider col in enemies)
         {
             AIController aiController = col.GetComponent<AIController>();
@@ -144,18 +170,4 @@ public class TowerAbilities : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, poisonRadius);
     }
     #endregion
-
-    private class TowerAbilitiesManager : MonoBehaviour
-    {
-        void LateUpdate()
-        {
-            GameObject[] allEnemies = GameObject.FindGameObjectsWithTag("AI");
-            foreach (GameObject ai in allEnemies)
-            {
-                AiPathfinding aiPathfinding = ai.GetComponent<AiPathfinding>();
-                if (aiPathfinding == null) continue;
-                aiPathfinding.speed = aiPathfinding.originalSpeed;
-            }
-        }
-    }
 }

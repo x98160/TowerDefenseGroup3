@@ -694,11 +694,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poisonDamage: 3
+  poisonRadius: 10
+  poisonTickRate: 1
   slowmovementSpeed: 1
+  slowmovementRadius: 10
   splashDamage: 15
   splashDamageRadius: 5
   explosionEffectPrefab: {fileID: 0}
   towerData: {fileID: 11400000, guid: b22eb584d7edcb144b000f0df6dd8cac, type: 2}
+  towerID: 0
 --- !u!1 &7749431282748022849 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8235882813842860719, guid: 3d5e85e11a8884145b428a606c31982f, type: 3}

@@ -1476,6 +1476,7 @@ MonoBehaviour:
   splashDamageRadius: 5
   explosionEffectPrefab: {fileID: 6047399693969199944, guid: 30e6242f2908c8e4c9aec83e6946baf9, type: 3}
   towerData: {fileID: 11400000, guid: b22eb584d7edcb144b000f0df6dd8cac, type: 2}
+  towerID: 4
 --- !u!1 &7298763382204979915
 GameObject:
   m_ObjectHideFlags: 0
