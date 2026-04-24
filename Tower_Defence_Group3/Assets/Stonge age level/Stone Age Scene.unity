@@ -5253,7 +5253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55a4c66129cf5ab45b002fb7420b07bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerData: {fileID: 11400000, guid: b22eb584d7edcb144b000f0df6dd8cac, type: 2}
+  towerData: {fileID: 11400000, guid: 3c373f6dc24eea94a954a024b349f701, type: 2}
   dataIndex: 1
 --- !u!114 &585580142
 MonoBehaviour:
@@ -9484,7 +9484,7 @@ MonoBehaviour:
   splashDamage: 15
   splashDamageRadius: 5
   explosionEffectPrefab: {fileID: 0}
-  towerData: {fileID: 11400000, guid: b22eb584d7edcb144b000f0df6dd8cac, type: 2}
+  towerData: {fileID: 11400000, guid: 3c373f6dc24eea94a954a024b349f701, type: 2}
   towerID: -1
 --- !u!114 &965415697
 MonoBehaviour:
@@ -17289,7 +17289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55a4c66129cf5ab45b002fb7420b07bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerData: {fileID: 11400000, guid: b22eb584d7edcb144b000f0df6dd8cac, type: 2}
+  towerData: {fileID: 11400000, guid: 3c373f6dc24eea94a954a024b349f701, type: 2}
   dataIndex: 3
 --- !u!114 &1708084752
 MonoBehaviour:
@@ -18192,7 +18192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55a4c66129cf5ab45b002fb7420b07bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerData: {fileID: 11400000, guid: b22eb584d7edcb144b000f0df6dd8cac, type: 2}
+  towerData: {fileID: 11400000, guid: 3c373f6dc24eea94a954a024b349f701, type: 2}
   dataIndex: 4
 --- !u!114 &1802366252
 MonoBehaviour:
@@ -20426,7 +20426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55a4c66129cf5ab45b002fb7420b07bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerData: {fileID: 11400000, guid: b22eb584d7edcb144b000f0df6dd8cac, type: 2}
+  towerData: {fileID: 11400000, guid: 3c373f6dc24eea94a954a024b349f701, type: 2}
   dataIndex: 2
 --- !u!114 &1948622639
 MonoBehaviour:
