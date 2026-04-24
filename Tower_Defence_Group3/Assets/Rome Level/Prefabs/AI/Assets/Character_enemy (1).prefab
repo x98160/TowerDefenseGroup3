@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2590739646822119274}
   - component: {fileID: 97697876507519180}
   - component: {fileID: 8846006287435270860}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Hand_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,9 +95,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8566206775510105012}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Character_enemy (1)
-  m_TagString: AI
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 7069675368417449936}
   - component: {fileID: 4491829902539868159}
   - component: {fileID: 7099166039457358129}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Solider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 8873748718659584568}
   - component: {fileID: 4636678681112507251}
   - component: {fileID: 7582990587824863070}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 4113740723831187808}
   - component: {fileID: 2011356655029205746}
   - component: {fileID: 1527113019359826396}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Hand_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

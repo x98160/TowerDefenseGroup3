@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4508788368029000515}
   - component: {fileID: 7116706634383659335}
   - component: {fileID: 5502291684045414865}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Solider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,9 +98,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 64343692136520780}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: centurion_enemy
-  m_TagString: AI
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
