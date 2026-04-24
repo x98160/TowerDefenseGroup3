@@ -6373,7 +6373,7 @@ MonoBehaviour:
   ySpeed: 220
   yMinLimit: 10
   yMaxLimit: 80
-  zoomSpeed: 12
+  zoomSpeed: 20
   minDistance: 15
   maxDistance: 50
 --- !u!114 &726499985
