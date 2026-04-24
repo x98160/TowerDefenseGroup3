@@ -8,7 +8,7 @@ public class PlacementSystem : MonoBehaviour
     [SerializeField] private GameObject mouseIndicator, cellIndicator;
     [SerializeField] private InputManager inputManager;
     [SerializeField] private Grid grid;
-    [SerializeField] private TowerData database;
+    [SerializeField] public TowerData database;
     [SerializeField] private GameObject gridVisual;
     [SerializeField] private LayerMask blockingLayers;
     [SerializeField] private LayerMask towerLayerMask;

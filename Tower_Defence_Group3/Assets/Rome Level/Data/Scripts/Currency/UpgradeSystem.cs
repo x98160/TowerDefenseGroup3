@@ -24,25 +24,19 @@ public class UpgradeSystem : MonoBehaviour
         if (currentTier >= objectData.UpgradePrefabs.Length)
             return;
 
-        if (!Currency.main.SpendCurrency(objectData.Upgrade))
-            return;
+        // REMOVED: Currency.main.SpendCurrency() - this is handled by SelectionUI now
 
-        // remove old model
         Destroy(currentModel);
 
-        // spawn upgrade model as child of the tower so it stays in the same place
         currentModel = Instantiate(
             objectData.UpgradePrefabs[currentTier],
             transform
         );
 
         currentModel.transform.localPosition = Vector3.zero;
-
         currentTier++;
 
         Debug.Log("Upgraded to tier " + currentTier);
-        // add UI feedback here to indicate upgrade success, maybe a sound effect or particle effect
-        
     }
 
     /*

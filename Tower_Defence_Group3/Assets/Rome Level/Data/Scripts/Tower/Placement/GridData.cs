@@ -84,15 +84,23 @@ public class PlacementData
         UpgradeLevel = 0;
         this.upgradeSystem = upgradeSystem;
     }
-    public void UpgradeTier()
+    public bool UpgradeTier()
     {
-        UpgradeLevel++;
+        if (UpgradeLevel >= 2)
+        {
+            Debug.Log("Already max level");
+            return false;
+        }
+
         if (upgradeSystem == null)
         {
-            Debug.LogError("Upgrade system is null, cannot upgrade");
-            return; // stops crashes but should never happen
+            Debug.LogError("upgradeSystem is NULL - was it assigned when the tower was placed?");
+            return false;
         }
+
+        UpgradeLevel++;
         upgradeSystem.Upgrade();
+        return true;
     }
 
 }

@@ -41,8 +41,25 @@ public class SelectionUI : MonoBehaviour
     public void OnUpgradePressed()
     {
         if (placementSystem.SelectedTowerData == null) return;
-        placementSystem.SelectedTowerData.UpgradeTier();
-        ShowPannel(placementSystem.SelectedTowerData);
+
+        // Look up upgrade cost from TowerData using the tower's ID
+        ObjectData towerData = placementSystem.database.objectsData
+            .Find(d => d.ID == placementSystem.SelectedTowerData.ID);
+
+        if (towerData == null) return;
+
+        int upgradeCost = towerData.Upgrade;
+
+        if (!Currency.main.SpendCurrency(upgradeCost))
+        {
+            Debug.Log("Not enough currency to upgrade!");
+            return; // UI does NOT refresh — nothing changed
+        }
+
+        bool upgraded = placementSystem.SelectedTowerData.UpgradeTier();
+
+        if (upgraded)
+            ShowPannel(placementSystem.SelectedTowerData); // Only refresh on success
     }
 
     public void OnDeletePressed()
