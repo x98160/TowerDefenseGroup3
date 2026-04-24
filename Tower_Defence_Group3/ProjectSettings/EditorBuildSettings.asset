@@ -20,24 +20,27 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Individual/Designers/James D/Scenes/StartScene.unity
     guid: 7f01353df521ae645a687520279bada7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Individual/Programmers/Joe/LevelSelect.unity
     guid: 1261bfe46787e414c854f5bd3f20497f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Individual/Programmers/Joe/Level_3.unity
     guid: dcc91c52b88cbd8439c419d4def44764
-  - enabled: 1
+  - enabled: 0
     path: Assets/Individual/Programmers/Joe/Level_2.unity
     guid: b73fe81707e2eb640bbec83b4d783a45
-  - enabled: 1
+  - enabled: 0
     path: Assets/Individual/Programmers/Joe/Level_1.unity
     guid: 78bed8d0b8956f44bbbb7fd00d592fed
   - enabled: 0
     path: Assets/Rome Level/Rome Level.unity
     guid: f6d7a35512fe5524a9617ff810bd39e1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Individual/Programmers/Joe/ShipLevel.unity
     guid: 1f099cfb1c5b5ad418eb1e54cc600bc6
+  - enabled: 1
+    path: Assets/Individual/Designers/James D New/Changes/James D/Scenes/StartScene.unity
+    guid: b61789ca101ba2448a0b05b61c770bce
   - enabled: 1
     path: Assets/Individual/Designers/James D New/Changes/James D/Scenes/LevelSelectScene.unity
     guid: 27a55a4ff042d134d86367f34a6da244
@@ -53,9 +56,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Individual/Designers/James D New/Changes/James D/Scenes/InstructionsScene.unity
     guid: 413dcd1a7a59e91469f6bf364b2cf3a1
-  - enabled: 1
-    path: Assets/Individual/Designers/James D New/Changes/James D/Scenes/StartScene.unity
-    guid: b61789ca101ba2448a0b05b61c770bce
   - enabled: 1
     path: Assets/Individual/Designers/James D New/Changes/James D/Scenes/AboutScene.unity
     guid: 5206afab3ad644b46aa3b515d846056b
