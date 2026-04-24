@@ -1253,7 +1253,7 @@ MonoBehaviour:
   projectile: {fileID: 6047399693969199944, guid: 09cd497bc051fb64dac2d43f535fb2f7, type: 3}
   shootPoint: {fileID: 5463227709398049341}
   projectileSpeed: 15
-  fireRate: 2.2
+  fireRate: 2.5
   secsToDestroy: 5
   damage: 10
   damageIncrease: 5
@@ -1309,7 +1309,7 @@ MonoBehaviour:
   projectile: {fileID: 6047399693969199944, guid: 09cd497bc051fb64dac2d43f535fb2f7, type: 3}
   shootPoint: {fileID: 1051304170182379730}
   projectileSpeed: 15
-  fireRate: 2.2
+  fireRate: 2.5
   secsToDestroy: 5
   damage: 10
   damageIncrease: 5
@@ -1948,7 +1948,7 @@ MonoBehaviour:
   projectile: {fileID: 6047399693969199944, guid: 09cd497bc051fb64dac2d43f535fb2f7, type: 3}
   shootPoint: {fileID: 8798263969461458766}
   projectileSpeed: 15
-  fireRate: 2.2
+  fireRate: 2.5
   secsToDestroy: 5
   damage: 10
   damageIncrease: 5

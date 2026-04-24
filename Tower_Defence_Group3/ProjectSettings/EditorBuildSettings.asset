@@ -59,10 +59,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Individual/Designers/James D New/Changes/James D/Scenes/AboutScene.unity
     guid: 5206afab3ad644b46aa3b515d846056b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Individual/Designers/James D New/Changes/James D/Scenes/Rome Level
       James.unity
     guid: 0e527148bb6dc944bb973f4e17ba5f0f
+  - enabled: 1
+    path: Assets/Rome Level/MainScene.unity
+    guid: d3c10373f147aec47b9da99683cf1e1c
+  - enabled: 1
+    path: Assets/Stonge age level/Stone Age Scene.unity
+    guid: eaeddff622d79dd4cb8dc04cfe3b8ff2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

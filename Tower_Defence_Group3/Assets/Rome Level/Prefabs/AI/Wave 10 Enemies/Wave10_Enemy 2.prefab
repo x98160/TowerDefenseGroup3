@@ -210,9 +210,9 @@ MonoBehaviour:
   healthBar: {fileID: 1647361206092172627}
   healthBar2: {fileID: 4599639573682810525}
   buff: 1
-  health: 150
+  health: 170
   damage: 18
-  value: 6
+  value: 9
   commanderRadius: 15
 --- !u!114 &1629921783308098491
 MonoBehaviour:
