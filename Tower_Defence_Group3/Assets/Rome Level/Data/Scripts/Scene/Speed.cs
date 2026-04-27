@@ -1,13 +1,21 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Speed : MonoBehaviour
 {
     private bool isDoubleSpeed = false;
 
+    public Image buttonImage;
+    public Sprite normalSpeedSprite;
+    public Sprite doubleSpeedSprite;
+
     public void ToggleSpeed()
     {
         isDoubleSpeed = !isDoubleSpeed;
         Time.timeScale = isDoubleSpeed ? 2f : 1f;
+
+        // Change the image
+        buttonImage.sprite = isDoubleSpeed ? doubleSpeedSprite : normalSpeedSprite;
     }
 
     void OnDestroy()
