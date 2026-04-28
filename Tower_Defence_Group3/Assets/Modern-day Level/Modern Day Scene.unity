@@ -4353,7 +4353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moneyText: {fileID: 901220932}
   amount: 20
-  currency: 303
+  currency: 100
 --- !u!4 &368351007 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3778867803676415355, guid: 04037bdeb5f5ee749be2eb72540255e9, type: 3}
