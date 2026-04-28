@@ -18,7 +18,7 @@ MonoBehaviour:
     <Size>k__BackingField: {x: 1, y: 1}
     <Prefab>k__BackingField: {fileID: 2024129408164881570, guid: 4b4ba0d3e49e1ae44811bc02f6439aee, type: 3}
     <Cost>k__BackingField: 50
-    <Damage>k__BackingField: 10
+    <Damage>k__BackingField: 15
     <Upgrade>k__BackingField: 100
     Ability: 0
     <UpgradePrefabs>k__BackingField:
@@ -28,8 +28,8 @@ MonoBehaviour:
     <ID>k__BackingField: 1
     <Size>k__BackingField: {x: 1, y: 1}
     <Prefab>k__BackingField: {fileID: 1045800421623065673, guid: c71ae973bd7bced4a9abfe5892cda859, type: 3}
-    <Cost>k__BackingField: 90
-    <Damage>k__BackingField: 10
+    <Cost>k__BackingField: 70
+    <Damage>k__BackingField: 15
     <Upgrade>k__BackingField: 140
     Ability: 0
     <UpgradePrefabs>k__BackingField:
@@ -39,8 +39,8 @@ MonoBehaviour:
     <ID>k__BackingField: 2
     <Size>k__BackingField: {x: 1, y: 1}
     <Prefab>k__BackingField: {fileID: 5076999965322552693, guid: 05976a90685e44a4a849a367d206b1fd, type: 3}
-    <Cost>k__BackingField: 120
-    <Damage>k__BackingField: 10
+    <Cost>k__BackingField: 95
+    <Damage>k__BackingField: 15
     <Upgrade>k__BackingField: 180
     Ability: 0
     <UpgradePrefabs>k__BackingField:
@@ -50,8 +50,8 @@ MonoBehaviour:
     <ID>k__BackingField: 3
     <Size>k__BackingField: {x: 1, y: 1}
     <Prefab>k__BackingField: {fileID: 208822650574813260, guid: 21b73d56abf6a7541a104e873ff30ec9, type: 3}
-    <Cost>k__BackingField: 150
-    <Damage>k__BackingField: 10
+    <Cost>k__BackingField: 105
+    <Damage>k__BackingField: 15
     <Upgrade>k__BackingField: 200
     Ability: 0
     <UpgradePrefabs>k__BackingField:
@@ -61,8 +61,8 @@ MonoBehaviour:
     <ID>k__BackingField: 4
     <Size>k__BackingField: {x: 1, y: 1}
     <Prefab>k__BackingField: {fileID: 1795137047195874219, guid: dad72e8a94c524948ae8af0eb53d5ed9, type: 3}
-    <Cost>k__BackingField: 150
-    <Damage>k__BackingField: 5
+    <Cost>k__BackingField: 110
+    <Damage>k__BackingField: 15
     <Upgrade>k__BackingField: 200
     Ability: 0
     <UpgradePrefabs>k__BackingField:
