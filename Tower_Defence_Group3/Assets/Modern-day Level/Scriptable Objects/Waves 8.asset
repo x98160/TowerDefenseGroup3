@@ -14,27 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixGroups: 0
   aiGroups:
-  - aiPrefab: {fileID: 5078134867658338762, guid: 830673139f0420b4499da36e3e8429cc, type: 3}
+  - aiPrefab: {fileID: 9126160360358429927, guid: 748405205caadb84487ee19e7fd30317, type: 3}
     aiCount: 8
     spawnRate: 0.4
-  - aiPrefab: {fileID: 8385635963091098835, guid: c53350086fe02214aaf7b8112ca0e3fd, type: 3}
+  - aiPrefab: {fileID: 9126160360358429927, guid: 748405205caadb84487ee19e7fd30317, type: 3}
     aiCount: 8
     spawnRate: 0.4
-  - aiPrefab: {fileID: 5078134867658338762, guid: 830673139f0420b4499da36e3e8429cc, type: 3}
+  - aiPrefab: {fileID: 1938358839943363331, guid: 33dba02b331508c4d88db76c24b09340, type: 3}
     aiCount: 8
     spawnRate: 0.4
-  - aiPrefab: {fileID: 8385635963091098835, guid: c53350086fe02214aaf7b8112ca0e3fd, type: 3}
+  - aiPrefab: {fileID: 919132149155446097, guid: 83a5f3f37669dc3499dab58851f5e64b, type: 3}
     aiCount: 8
     spawnRate: 0.4
-  - aiPrefab: {fileID: 8170759356412190349, guid: 346d57a7f25f76847ab37ac7fc9f2613, type: 3}
+  - aiPrefab: {fileID: 9126160360358429927, guid: 748405205caadb84487ee19e7fd30317, type: 3}
     aiCount: 8
     spawnRate: 0.4
-  - aiPrefab: {fileID: 8170759356412190349, guid: 346d57a7f25f76847ab37ac7fc9f2613, type: 3}
+  - aiPrefab: {fileID: 919132149155446097, guid: 76979d93f24e98e4a92c7f0f299699b3, type: 3}
     aiCount: 8
     spawnRate: 0.4
-  - aiPrefab: {fileID: 8170759356412190349, guid: 346d57a7f25f76847ab37ac7fc9f2613, type: 3}
+  - aiPrefab: {fileID: 1938358839943363331, guid: 33dba02b331508c4d88db76c24b09340, type: 3}
     aiCount: 8
     spawnRate: 0.4
-  - aiPrefab: {fileID: 8170759356412190349, guid: 346d57a7f25f76847ab37ac7fc9f2613, type: 3}
+  - aiPrefab: {fileID: 919132149155446097, guid: 83a5f3f37669dc3499dab58851f5e64b, type: 3}
     aiCount: 8
     spawnRate: 0.4
