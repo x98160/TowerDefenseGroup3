@@ -218,6 +218,8 @@ MonoBehaviour:
   damage: 10
   damageIncrease: 5
   isCannon: 0
+  ShootSound: {fileID: 8300000, guid: d74e7a14365cfdd44b026d866456bdf2, type: 3}
+  volume: 1
 --- !u!1 &2985628708142874120
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,6 +515,8 @@ MonoBehaviour:
   damage: 10
   damageIncrease: 5
   isCannon: 0
+  ShootSound: {fileID: 8300000, guid: d74e7a14365cfdd44b026d866456bdf2, type: 3}
+  volume: 1
 --- !u!1001 &1855546238760897262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -625,6 +629,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 1.3
       objectReference: {fileID: 0}
+    - target: {fileID: 7491987970644980992, guid: 3d5e85e11a8884145b428a606c31982f, type: 3}
+      propertyPath: ShootSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d74e7a14365cfdd44b026d866456bdf2, type: 3}
     - target: {fileID: 7491987970644980992, guid: 3d5e85e11a8884145b428a606c31982f, type: 3}
       propertyPath: projectile
       value: 

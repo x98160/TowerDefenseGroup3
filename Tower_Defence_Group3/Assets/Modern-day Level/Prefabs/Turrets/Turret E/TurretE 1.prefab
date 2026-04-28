@@ -328,6 +328,8 @@ MonoBehaviour:
   damage: 10
   damageIncrease: 5
   isCannon: 1
+  ShootSound: {fileID: 8300000, guid: aab8d69bc0a35754d8892d1cfe427fcd, type: 3}
+  volume: 1
 --- !u!114 &8560191313201673882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,11 +343,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poisonDamage: 3
+  poisonRadius: 10
+  poisonTickRate: 1
   slowmovementSpeed: 0.7
+  slowmovementRadius: 10
   splashDamage: 15
   splashDamageRadius: 5
   explosionEffectPrefab: {fileID: 499873257356596338, guid: 7745a3c8550ad714885a853de7b6fa9e, type: 3}
   towerData: {fileID: 11400000, guid: 58acc1ea8e6e57046b4544c1661b9fb3, type: 2}
+  towerID: -1
 --- !u!1 &8497253332148401461
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +406,8 @@ MonoBehaviour:
   damage: 10
   damageIncrease: 5
   isCannon: 1
+  ShootSound: {fileID: 8300000, guid: aab8d69bc0a35754d8892d1cfe427fcd, type: 3}
+  volume: 1
 --- !u!1 &8933305042444395513
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,10 +19,17 @@ public class PlayerTrack : MonoBehaviour
     public int damageIncrease = 5;
     public bool isCannon = false;
     private TowerAbilities towerAbilities;
+    [Header("Audio")]
+    public AudioClip ShootSound;
+    public float volume = 1f;
+    private AudioSource audioSource;
 
     void Start()
     {
         towerAbilities = GetComponentInParent<TowerAbilities>();
+
+        audioSource = GetComponent<AudioSource>();
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     void Update()
@@ -90,6 +97,9 @@ public class PlayerTrack : MonoBehaviour
             bulletScript.damage = damage;
             bulletScript.SetTower(towerAbilities);
         }
+
+        audioSource.PlayOneShot(ShootSound, volume);
+
         Destroy(bullet, secsToDestroy);
     }
 
