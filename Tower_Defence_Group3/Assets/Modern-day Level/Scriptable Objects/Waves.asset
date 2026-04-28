@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixGroups: 0
   aiGroups:
-  - aiPrefab: {fileID: 1938358839943363331, guid: 33dba02b331508c4d88db76c24b09340, type: 3}
+  - aiPrefab: {fileID: 1938358839943363331, guid: 97430efa202978d4d9e7a9d5bab1831b, type: 3}
     aiCount: 2
     spawnRate: 1.5
-  - aiPrefab: {fileID: 9126160360358429927, guid: 748405205caadb84487ee19e7fd30317, type: 3}
+  - aiPrefab: {fileID: 1938358839943363331, guid: 97430efa202978d4d9e7a9d5bab1831b, type: 3}
     aiCount: 1
     spawnRate: 1.5
-  - aiPrefab: {fileID: 8265456492163131291, guid: c91bdef54aa99a74e86139d6caaf949d, type: 3}
+  - aiPrefab: {fileID: 1938358839943363331, guid: 97430efa202978d4d9e7a9d5bab1831b, type: 3}
     aiCount: 1
     spawnRate: 1.5
-  - aiPrefab: {fileID: 8265456492163131291, guid: c91bdef54aa99a74e86139d6caaf949d, type: 3}
+  - aiPrefab: {fileID: 1938358839943363331, guid: 97430efa202978d4d9e7a9d5bab1831b, type: 3}
     aiCount: 1
     spawnRate: 1.5
