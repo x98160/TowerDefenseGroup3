@@ -126,7 +126,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135287415612458667}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7955c9f1b49099439612327806ee283, type: 3}
   m_Name: 
@@ -141,6 +141,8 @@ MonoBehaviour:
   damage: 10
   damageIncrease: 5
   isCannon: 0
+  ShootSound: {fileID: 0}
+  volume: 1
 --- !u!1 &1287638857707955771
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,13 +627,15 @@ MonoBehaviour:
   maxDistance: 6
   player: {fileID: 6068076357901368897}
   projectile: {fileID: 1701766291348420743, guid: 995b01fb09d69c2468e586ea75c37461, type: 3}
-  shootPoint: {fileID: 0}
+  shootPoint: {fileID: 6989004436894372790}
   projectileSpeed: 60
   fireRate: 0.4
   secsToDestroy: 5
   damage: 10
   damageIncrease: 5
   isCannon: 0
+  ShootSound: {fileID: 8300000, guid: 9dc79e756f65824479f40d9ed16bc6dd, type: 3}
+  volume: 1
 --- !u!1 &8256342027909273969
 GameObject:
   m_ObjectHideFlags: 0

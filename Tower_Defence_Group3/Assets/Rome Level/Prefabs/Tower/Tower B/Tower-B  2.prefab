@@ -56,6 +56,8 @@ MonoBehaviour:
   damage: 10
   damageIncrease: 5
   isCannon: 0
+  ShootSound: {fileID: 8300000, guid: d74e7a14365cfdd44b026d866456bdf2, type: 3}
+  volume: 1
 --- !u!1 &1086675685850748225
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,6 +344,8 @@ MonoBehaviour:
   damage: 10
   damageIncrease: 5
   isCannon: 0
+  ShootSound: {fileID: 8300000, guid: d74e7a14365cfdd44b026d866456bdf2, type: 3}
+  volume: 1
 --- !u!1 &6545443900400399084
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,6 +492,8 @@ MonoBehaviour:
   damage: 10
   damageIncrease: 5
   isCannon: 0
+  ShootSound: {fileID: 8300000, guid: d74e7a14365cfdd44b026d866456bdf2, type: 3}
+  volume: 1
 --- !u!1 &7218837442431112214
 GameObject:
   m_ObjectHideFlags: 0

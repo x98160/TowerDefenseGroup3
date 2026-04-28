@@ -217,7 +217,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827774858309154313}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7955c9f1b49099439612327806ee283, type: 3}
   m_Name: 
@@ -232,6 +232,8 @@ MonoBehaviour:
   damage: 10
   damageIncrease: 5
   isCannon: 0
+  ShootSound: {fileID: 0}
+  volume: 1
 --- !u!1 &1135287415612458667
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +273,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135287415612458667}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7955c9f1b49099439612327806ee283, type: 3}
   m_Name: 
@@ -286,6 +288,8 @@ MonoBehaviour:
   damage: 10
   damageIncrease: 5
   isCannon: 0
+  ShootSound: {fileID: 0}
+  volume: 1
 --- !u!1 &1287638857707955771
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +502,8 @@ MonoBehaviour:
   damage: 10
   damageIncrease: 5
   isCannon: 0
+  ShootSound: {fileID: 8300000, guid: 9dc79e756f65824479f40d9ed16bc6dd, type: 3}
+  volume: 1
 --- !u!1 &3619832548725922811
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,7 +787,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7447751532525070001}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7955c9f1b49099439612327806ee283, type: 3}
   m_Name: 
@@ -796,6 +802,8 @@ MonoBehaviour:
   damage: 10
   damageIncrease: 5
   isCannon: 0
+  ShootSound: {fileID: 0}
+  volume: 1
 --- !u!1 &7474274064774832988
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,6 +897,8 @@ MonoBehaviour:
   damage: 10
   damageIncrease: 5
   isCannon: 0
+  ShootSound: {fileID: 8300000, guid: 9dc79e756f65824479f40d9ed16bc6dd, type: 3}
+  volume: 1
 --- !u!1 &8152876451550970643
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,6 +955,8 @@ MonoBehaviour:
   damage: 10
   damageIncrease: 5
   isCannon: 0
+  ShootSound: {fileID: 8300000, guid: 9dc79e756f65824479f40d9ed16bc6dd, type: 3}
+  volume: 1
 --- !u!1 &8256342027909273969
 GameObject:
   m_ObjectHideFlags: 0
