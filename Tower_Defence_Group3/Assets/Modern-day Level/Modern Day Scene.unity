@@ -2214,7 +2214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7317069306432927451, guid: 51ca6998f30758f4b8817673eb1ff001, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00001812
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7317069306432927451, guid: 51ca6998f30758f4b8817673eb1ff001, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2421,7 +2421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4863647430833659953, guid: 2e1d1966e1da53348988f41a970ce8ef, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000021935
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4863647430833659953, guid: 2e1d1966e1da53348988f41a970ce8ef, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10921,7 +10921,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7317069306432927451, guid: 51ca6998f30758f4b8817673eb1ff001, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00001812
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7317069306432927451, guid: 51ca6998f30758f4b8817673eb1ff001, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -21229,7 +21229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9607843, g: 0.9254902, b: 0.79607844, a: 1}
+  m_Color: {r: 0.39607847, g: 0.4156863, b: 0.27058825, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -22760,7 +22760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7317069306432927451, guid: 51ca6998f30758f4b8817673eb1ff001, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00001812
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7317069306432927451, guid: 51ca6998f30758f4b8817673eb1ff001, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -24744,7 +24744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9622642, g: 0.92409545, b: 0.79432184, a: 1}
+  m_Color: {r: 0.39607847, g: 0.4156863, b: 0.27058825, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
